@@ -1,0 +1,122 @@
+
+.subheader2{
+    height: 50vh;
+    width: 100%;
+    background-image: url("img.jpg");
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+.subheader2 h2{
+    padding-top: 12%;
+    font-size: 40px;
+    text-align: center;
+}
+.picture{
+    width: 1%;
+    padding-top: 40px;
+}
+.blogcontent{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    width: 65%;
+}
+.blogleft{
+    flex-basis: 65%;
+}
+.blogleft h2{
+    font-weight: 600;
+    margin: 30px 0;
+    font-size: 24px;
+}
+.blogleft p{
+    color: #555;
+    padding: 0;
+    font-size: 20px;
+}
+.commentbox1{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.commentbox1 h3{
+    text-align: left;
+}
+.commentform1 input{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+.commentform1 button{
+    margin: 10px 0;
+}
+.blogright{
+    flex-basis: 32%;
+}
+.blogright h3{
+    background: #f44336;
+    color: aliceblue;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blogright div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.butt_on{
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.butt_on:hover{
+    border: 1px solid #f44336;
+    background: red;
+    color: aliceblue;
+    transition: 1s;
+}
+@media(max-width: 700px){
+    .blogcontent{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .picture img{
+        width: 289.91px;
+        height: 210px;
+    }
+    .blogleft{
+        margin: 0px;
+        width: 289.91px;
+    }
+    .blogleft h2{
+        text-align: center;
+    }
+    .blogleft p{
+        text-align: justify;
+    }
+    .commentbox1{
+        width: 241.91px;
+    }
+}
