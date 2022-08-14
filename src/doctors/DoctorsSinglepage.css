@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+
+.singleDoctorContainer
+{
+    margin: 30px 160px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbarbackgroundcolor
+{
+    background-color: black;
+}
+
+.DoctorDeatail
+{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 25px;
+}
+.DDetail
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px;
+}
+.DDetail h1
+{
+    font-size: 25px;
+    padding: 10px 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.DDetail p
+{
+    margin: 0px;
+    font-size: 15px;
+    padding: 2px 0px;
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.doctoerBooked
+{
+    /* border: 1px solid black; */
+    width: 300px;
+    border-radius: 10px;
+    margin-left:15px ;
+}
+
+.feebar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #D7F5FE;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+}
+
+.feebar p
+{
+    font-size: 16px;
+}
+
+.doctoerBooked button
+{
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px 0px;
+    border: 0px;
+    background-color: #0098EC;
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.doctoerBooked button:hover
+{
+    background-color: white;
+    border: 1px solid#0098EC;
+    color: #0098EC;
+    cursor: pointer;
+}

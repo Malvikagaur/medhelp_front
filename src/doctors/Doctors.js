@@ -56,7 +56,10 @@ const Doctors= () => {
                         <div className="doctorrating"><p><AiFillLike/>  {data.rating}%</p></div>
                     </div>
                     <div className="doctormoreinfo">
-                        <button>More Info</button>
+                        <button onClick={() =>
+                        {
+                            window.location.href = "/SinglePage/" + data._id;
+                        }}>More Info</button>
                     </div>
                 </div>
             )})
