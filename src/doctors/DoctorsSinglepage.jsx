@@ -34,7 +34,22 @@ export default function DoctorsSinglepage() {
         fetchdata();
     },[])
 
-    console.log(doctorD);
+    async function handleBooking()
+    {
+    const userId = {id : localStorage.getItem("userid")}
+    console.log(userId)
+      await axios.post(`http://localhost:8000/api/DoctorBooked/${id}`,userId).then(function (response)
+      {
+        if(response.data)
+        {
+          console.log("Doctor Booked");
+        }
+      }).catch(function (error)
+      {
+        console.log(error);
+      })
+  }
+
   return (
     <>
     <div className="navbarbackgroundcolor">
@@ -61,7 +76,10 @@ export default function DoctorsSinglepage() {
                     <p>Clinic Appointment</p>
                     <p><b>₹{doctorD.Fees} fee</b></p>
                 </div>
-                <button>Book Doctor</button>
+                <button onClick={() =>
+                {
+                    handleBooking();
+                }}>Book Doctor</button>
             </div>
         </div>
         <Footer/>
