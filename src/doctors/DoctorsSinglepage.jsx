@@ -42,6 +42,7 @@ export default function DoctorsSinglepage() {
       {
         if(response.data)
         {
+            window.location.href = "/Appointment"
           console.log("Doctor Booked");
         }
       }).catch(function (error)
