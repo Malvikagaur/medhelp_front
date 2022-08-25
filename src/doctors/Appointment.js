@@ -3,7 +3,6 @@ import './Appointment.css';
 import Navbar from '../nav-bar/Navbar';
 
 const Appointment = () => {
-    
     return (
         <div>
              <div className="header2">
@@ -14,7 +13,6 @@ const Appointment = () => {
             <a href="/Doctors" class="bttn">Back To Booking</a>
         </div>
         </div>
-    
         </div>
     )
 }

@@ -19,7 +19,10 @@ export default function Loginform() {
       if(response.data.token)
       {
           localStorage.setItem("token", response.data.token);
-          window.location.href='/Doctors';
+
+          localStorage.setItem("userid",response.data.userid)
+          window.location.href="/Doctors";
+
       }
     }).catch(function(error)
     {

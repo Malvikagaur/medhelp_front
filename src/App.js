@@ -8,8 +8,7 @@ import Login from './login/Login';
 import Appointment from "./doctors/Appointment";
 import Thanks from "./contact/Thanks";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-
-
+import DoctorsSinglepage from "./doctors/DoctorsSinglepage";
 
 
 function App() {
@@ -25,6 +24,7 @@ function App() {
               <Route exact path="/Login" element={<Login/>}></Route>
               <Route exact path="/Appointment" element={<Appointment/>}></Route>
               <Route exact path="/Thanks" element={<Thanks/>}></Route>
+              <Route exact path="/SinglePage/:id" element={<DoctorsSinglepage/>}></Route>
             </Routes>
           </Router>
           </div>
