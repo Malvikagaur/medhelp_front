@@ -55,6 +55,7 @@ export default function DoctorsSinglepage() {
     <>
     <div className="navbarbackgroundcolor">
         <Navbar/>
+        <h2>Our Verified Doctors</h2>
     </div>
         <div className="singleDoctorContainer">
             <div className="DoctorDeatail">

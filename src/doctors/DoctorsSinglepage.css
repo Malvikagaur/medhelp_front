@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
 
+.navbarbackgroundcolor{
+    height: 50vh;
+    width: 100%;
+    background-image: url("img.jpg");
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+.navbarbackgroundcolor h2{
+    padding-top: 12%;
+    font-size: 40px;
+    text-align: center;
+}
+
 .singleDoctorContainer
 {
     margin: 30px 160px;
@@ -7,10 +21,10 @@
     flex-direction: row;
 }
 
-.navbarbackgroundcolor
+/* .navbarbackgroundcolor
 {
     background-color: black;
-}
+} */
 
 .DoctorDeatail
 {

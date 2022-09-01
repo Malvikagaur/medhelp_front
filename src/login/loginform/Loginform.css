@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap'); */
 
 
 .formContainer
@@ -118,4 +118,11 @@
 .passwordContainer input
 {
     width : 290px;
+}
+@media(max-width: 700px){
+    .form label{
+        flex-direction: column;
+        text-align: justify;
+        padding-left: 130px;
+    }
 }

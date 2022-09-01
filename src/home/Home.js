@@ -15,7 +15,7 @@ const Home = () => {
       }
       else
       {
-          window.location.href="/Blog";
+          window.location.href="/";
       }
     }
     return (

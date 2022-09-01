@@ -10,7 +10,7 @@ const Appointment = () => {
             <div className="textbox">
         <h1>Your Appointment Has Been Booked</h1>
         <p>Drop the feedback at support page</p>
-            <a href="/Doctors" class="bttn">Back To Booking</a>
+            <a href="/Login" class="bttn">Back To Login</a>
         </div>
         </div>
         </div>
