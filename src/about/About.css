@@ -78,9 +78,14 @@
     }
     .aboutcol p{
        text-align: justify;
+       font-size: 20px;
     }
     .subheader1 h2{
         font-size: 24px;
         margin-top: 100px;
+    }
+    .aboutcol h1{
+        font-size: 24px;
+        text-align: center;
     }
 }

@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import "./Home.css";
 import Navbar from '../nav-bar/Navbar';
 import Footer from "../footer/Footer";
+import Carousel from "../carousel/Carousel";
 
 
 const Home = () => {
@@ -106,6 +107,7 @@ const Home = () => {
             <h1>Sign up now to avail unlimited benefits. <br></br>We are always here to help you.</h1>
             <a href="/Contact" class="bttn_01">CONTACT US</a>
         </section>
+        <Carousel/>
           <Footer/>
     </div>
     )

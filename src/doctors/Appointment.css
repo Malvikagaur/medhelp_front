@@ -48,3 +48,13 @@
 .red-bttn:hover{
     color: aliceblue;
 }
+@media (max-width : 700px) {
+    
+    .textbox h1
+    {
+       font-size: 40px;
+    }
+    .textbox a {
+        font-size: 25px;
+    }
+}

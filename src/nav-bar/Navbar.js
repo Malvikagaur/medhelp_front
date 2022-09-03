@@ -31,7 +31,7 @@ const Navbar = () => {
                 <li><Link to="/Contact">SUPPORT</Link></li>  
             </ul>
             <div className="menu">
-                <p onClick={ChangeValue}><AiOutlineMenu/></p>
+                <AiOutlineMenu onClick={ChangeValue} className ="menu_hamburger"/>
             </div>
         </div>
         </div>

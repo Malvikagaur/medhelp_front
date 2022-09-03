@@ -119,10 +119,15 @@
 {
     width : 290px;
 }
+
 @media(max-width: 700px){
     .form label{
         flex-direction: column;
         text-align: justify;
         padding-left: 130px;
+    }
+    .formContainer{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

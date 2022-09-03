@@ -27,6 +27,9 @@ const Contact = () => {
             <Navbar/>
             <h2>Always Here To Help You</h2>
         </div>
+        <div style={{padding :"0px 20px"}}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10701.134823756971!2d77.27287049373656!3d28.701464928430354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfc139c6f8aab%3A0x409d254e45870ea3!2sYamuna%20Vihar%2C%20Shahdara%2C%20Delhi%2C%20110053!5e0!3m2!1sen!2sin!4v1662191511209!5m2!1sen!2sin" width="100%" height="450" style= {{border:0,padding : "20px 0px"}}allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <section className="contact-us">
             <div className="row3">
                 <div className="contact-col">

@@ -18,7 +18,7 @@
 .nav-links ul li{
     padding: 8px 12px;
     position: relative;
-    text-align: right;
+    text-align: center;
 }
 
 .nav-links ul li a{
@@ -67,15 +67,34 @@
         position: absolute;
     } */
 
+    .menu_hamburger
+    {
+        font-size: 20px;
+        color: aliceblue;
+    }
     .Menu-nav-links
     {
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 45px;
-        right: 0;
+        right: 16px;
         list-style: none;
-        padding: 8px 12px;
+        /* padding: 8px 12px; */
+       
+        border-radius: 10px;
+        z-index: 1;
+        /* text-align: center; */
+    }
+    .Menu-nav-links li{
+        border: 1px solid black;
+        border-radius: 10px;
+        /* width: 100%; */
+        text-align: center;
+        padding: 0px 18px;
+        background-color: #f44336;
+        margin-bottom: 8px;
+        text-align: center;
     }
     .menu
     {
