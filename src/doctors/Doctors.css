@@ -16,10 +16,10 @@
 .doctorscards
 {
     /* border: 1px solid black; */
-    margin: 30px 250px;
     padding: 30px;
     gap: 60px;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -29,6 +29,7 @@
     flex-direction: row;
     padding: 30px;
     align-items: center;
+    width:650px;
     justify-content: space-evenly;
     border-radius: 20px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -92,4 +93,17 @@
     border: 1px solid #14Bef0;
     background-color: white;
     color: #14Bef0;
+}
+
+@media (max-width : 710px) {
+    .doctordetailContainer
+    {
+        flex-direction: column;
+        width: 300px;
+    }
+    .doctordetail
+    {
+        align-items: center;
+        width: 300px;
+    }
 }
