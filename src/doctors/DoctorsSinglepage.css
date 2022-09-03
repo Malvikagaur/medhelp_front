@@ -16,9 +16,10 @@
 
 .singleDoctorContainer
 {
-    margin: 30px 160px;
     display: flex;
     flex-direction: row;
+    width:955px;
+    margin: auto;
 }
 
 /* .navbarbackgroundcolor
@@ -30,7 +31,7 @@
 {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    width: auto;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     padding: 25px;
 }
@@ -100,4 +101,36 @@
     border: 1px solid#0098EC;
     color: #0098EC;
     cursor: pointer;
+}
+
+@media (max-width : 1000px) {
+    
+    .singleDoctorContainer
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 500px;
+    }
+    .DoctorDeatail
+    {
+        padding: 0px;
+    }
+
+}
+
+
+@media (max-width : 510px) {
+    
+    .singleDoctorContainer
+    {
+        width: 300px;
+    }
+
+    .DoctorDeatail{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding: 10px;
+    }
 }
