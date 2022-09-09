@@ -3,6 +3,7 @@ import "./Home.css";
 import Navbar from '../nav-bar/Navbar';
 import Footer from "../footer/Footer";
 import Carousel from "../carousel/Carousel";
+import axios from "axios";
 
 
 const Home = () => {
