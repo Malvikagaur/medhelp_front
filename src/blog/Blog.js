@@ -22,9 +22,16 @@ const Blog = () => {
             console.log("false");
             alert("Please fill the complete details")
         }
-        await axios.post("http://localhost:8000/api/signup",user).then(function(response){
-            window.location.href = '/Login';  
+        await axios.post("https://medhelp-server.vercel.app/api/signup",user).then(function(response){
+            if(response)
+            {
+                window.location.href = '/Login';  
+            }
+        }).catch((err) =>{
+            console.log(err);
         })
+        
+        
 
     }
     return (

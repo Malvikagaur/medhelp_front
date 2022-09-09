@@ -24,7 +24,7 @@ export default function DoctorsSinglepage() {
         async function fetchdata()
         {
             try {
-                const data = (await axios.get(`http://localhost:8000/api/SingleDoctor/${id}`,{})).data
+                const data = (await axios.get(`https://medhelp-server.vercel.app/api/SingleDoctor/${id}`,{})).data
                 setDoctorD(data);
                 console.log(data);
             } catch (error) {
@@ -38,7 +38,7 @@ export default function DoctorsSinglepage() {
     {
     const userId = {id : localStorage.getItem("userid")}
     console.log(userId)
-      await axios.post(`http://localhost:8000/api/DoctorBooked/${id}`,userId).then(function (response)
+      await axios.post(`https://medhelp-server.vercel.app/api/DoctorBooked/${id}`,userId).then(function (response)
       {
         if(response.data)
         {

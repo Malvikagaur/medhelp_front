@@ -19,7 +19,7 @@ const Doctors= () => {
         async function fetchdata()
         {
             try{
-                const data  = (await axios.get("http://localhost:8000/api/FindallDoctors",{})).data;
+                const data  = (await axios.get("https://medhelp-server.vercel.app/api/FindallDoctors",{})).data;
                 setDoctorsDetail(data);
             }catch(error)
             {
