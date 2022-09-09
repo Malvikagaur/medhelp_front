@@ -9,16 +9,29 @@ const Home = () => {
   const [username, setName] = useState("");
   const [useremail, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const handleChange = () => {
-      if(username && useremail && password)
-      {
-          window.location.href="/Login";
-      }
-      else
-      {
-          window.location.href="/";
-      }
+  async function  handleChange () {
+    const user = {
+        username,
+        useremail,
+        password,
+        
+    };
+   if(username && useremail && password === " " ){
+        console.log("false");
+        alert("Please fill the complete details")
     }
+    await axios.post("https://medhelp-server.vercel.app/api/signup",user).then(function(response){
+        if(response)
+        {
+            window.location.href = '/Login';  
+        }
+    }).catch((err) =>{
+        console.log(err);
+    })
+    
+    
+
+}
     return (
     <div>
       <div className="header">
