@@ -9,10 +9,12 @@ import Appointment from "./doctors/Appointment";
 import Thanks from "./contact/Thanks";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import DoctorsSinglepage from "./doctors/DoctorsSinglepage";
+import Slider from "./Slider/Slider";
 
 
 function App() {
   return (
+
     <div className="App">
        <Router>
             <Routes>
@@ -27,6 +29,7 @@ function App() {
               <Route exact path="/SinglePage/:id" element={<DoctorsSinglepage/>}></Route>
             </Routes>
           </Router>
+         
           </div>
   );
 }

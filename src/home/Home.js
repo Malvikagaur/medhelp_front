@@ -2,7 +2,8 @@ import React,{useState} from "react";
 import "./Home.css";
 import Navbar from '../nav-bar/Navbar';
 import Footer from "../footer/Footer";
-import Carousel from "../carousel/Carousel";
+// import Carousel from "../carousel/Carousel";
+import Slider from "../Slider/Slider";
 import axios from "axios";
 
 
@@ -69,6 +70,9 @@ const Home = () => {
                 </div>
           </div>
           </div>
+
+
+          <Slider/>
           <section className="courses">
             <div className="facility">
             <h1>Facilties We Offer</h1>
@@ -121,7 +125,7 @@ const Home = () => {
             <h1>Sign up now to avail unlimited benefits. <br></br>We are always here to help you.</h1>
             <a href="/Contact" class="bttn_01">CONTACT US</a>
         </section>
-        <Carousel/>
+        {/* <Carousel/> */}
           <Footer/>
     </div>
     )
