@@ -25,7 +25,7 @@ const Navbar = () => {
              <ul className={menuclick ? "Menu-nav-links" : "nav-links-ul" }>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/About">ABOUT</Link></li> 
-                <li><Link to="/Blog">BLOG</Link></li>
+                <li><Link to="/Blog">JOIN US</Link></li>
                 <li><Link to="/Login">LOGIN</Link></li>
                 {/* <li><Link to="/Doctors">DOCTORS</Link></li> */}
                 <li><Link to="/Contact">SUPPORT</Link></li>  

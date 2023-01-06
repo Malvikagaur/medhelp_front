@@ -2,8 +2,8 @@ import React from "react";
 import './Footer.css';
 import { FaInstagram } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 const Footer = () => {
     return(
         <div>
@@ -14,7 +14,7 @@ const Footer = () => {
                <br></br>          
                By Med-hElp 
                <br></br>
-               <FaInstagram/> <FaFacebookSquare/> <FaGithub/> <FaLinkedin/>
+               <FaInstagram/> <FaFacebookSquare/> <FaYoutube/> <FaTwitter/>
             </p>
 
         </section>
