@@ -12,26 +12,25 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
-    async function handleChange  ()  {
-        const support = {
-            name,
-            email,
-            subject,
-            message,
-        };
-        
-        if(name && email && subject && message === " "){
-            console.log("false");
-            alert("Please fill the complete details")
-        }
-        await axios.post("https://medhelp-server.vercel.app/api/message", support).then(function(response){
-            if(response)
-            {
-                window.location.href="/Thanks";
+    async function handleChange()  {
+        try {
+            const support = {
+                name,
+                email,
+                subject,
+                message,
+            };
+            
+            if(name && email && subject && message === " "){
+                console.log("false");
+                alert("Please fill the complete details")
+            }else{
+                const data = (await axios.post("https://medhelp-server.vercel.app/api/message",{support})).data
+                console.log(data);
             }
-        }).catch((err) =>{
-            console.log(err);
-        })
+        } catch (error) {
+            console.log(error);
+        }
         
     }
     return (

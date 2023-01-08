@@ -31,7 +31,7 @@ function App() {
               <Route exact path="/Thanks" element={<Thanks/>}></Route>
               <Route exact path="/SinglePage/:id" element={<DoctorsSinglepage/>}></Route>
               <Route exact path="/Medicine" element={<Medicine/>}></Route>
-              <Route exact path="/Medcart" element={<Medcart/>}></Route>
+              <Route exact path="/Medcart/:MedName/:Medqty" element={<Medcart/>}></Route>
               <Route exact path="/Slider" element={<Slider/>}></Route>
             </Routes>
           </Router>
