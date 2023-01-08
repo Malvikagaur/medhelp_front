@@ -5,23 +5,34 @@ import { FaHome } from 'react-icons/fa';
 import { FaPhoneVolume } from 'react-icons/fa';
 import { FaMailBulk } from 'react-icons/fa';
 import Footer from '../footer/Footer';
+import axios from "axios";
 
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState(" ");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
-    const handleChange = () => {
+    async function handleChange  ()  {
+        const support = {
+            name,
+            email,
+            subject,
+            message,
+        };
         
-        if(name && email && password && subject && message)
-        {
-            window.location.href="/Thanks";
+        if(name && email && subject && message === " "){
+            console.log("false");
+            alert("Please fill the complete details")
         }
-        else
-        {
-            window.location.href="/Contact";
-        }
+        await axios.post("https://medhelp-server.vercel.app/api/message", support).then(function(response){
+            if(response)
+            {
+                window.location.href="/Thanks";
+            }
+        }).catch((err) =>{
+            console.log(err);
+        })
+        
     }
     return (
     <div>
@@ -63,10 +74,7 @@ const Contact = () => {
                         setEmail(e.target.value)
                        }}></input>
 
-                       <input type="password" name="password" placeholder="Enter your password" required onChange={(e)=> 
-                       {
-                        setPassword(e.target.value)
-                       }}></input>
+                      
 
                       <input type="text" name="subject" placeholder="Enter your subject" required onChange={(e)=> 
                        {
