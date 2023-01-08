@@ -6,12 +6,14 @@ import { FaPhoneVolume } from 'react-icons/fa';
 import { FaMailBulk } from 'react-icons/fa';
 import Footer from '../footer/Footer';
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+    const navigate = useNavigate();
     async function handleChange()  {
         try {
             const support = {
@@ -26,7 +28,7 @@ const Contact = () => {
                 alert("Please fill the complete details")
             }else{
                 const data = (await axios.post("https://medhelp-server.vercel.app/api/message",{support})).data
-                console.log(data);
+                navigate('/Thanks')
             }
         } catch (error) {
             console.log(error);
