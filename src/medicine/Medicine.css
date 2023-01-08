@@ -1,0 +1,82 @@
+.med {
+    height: 50vh;
+    width: 100%;
+    background-image: url("img.jpg");
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+}
+.med h2{
+    padding-top: 12%;
+    font-size: 40px;
+    text-align: center;
+}
+.medicine
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    padding-top: 10px;
+    
+}
+
+.box
+{
+    /* background-color: rgb(243, 186, 232);
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding-left: 5px; */
+    flex-basis: 31%;
+    background: #fff3fd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.box:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.imagemed
+{
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;
+}
+
+.pinfo
+{
+    padding-top: 55px;
+}
+.medbtn
+{
+    /* border: 2px solid;
+    margin: 2px;
+    padding: 1px; */
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    border: 1px solid red;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.medbtn:hover{
+    border: 1px solid #f44336;
+    background: red;
+    color: aliceblue;
+    transition: 1s;
+}
+@media(max-width: 700px){
+    .med h2{
+        font-size: 24px;
+        margin-top: 100px;
+        padding-top: 32%;
+    }
+}

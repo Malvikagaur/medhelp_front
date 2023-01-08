@@ -27,6 +27,7 @@ export default function Loginform() {
     }).catch(function(error)
     {
       console.log(error);
+      alert("This field is required");
     })  
   }
   const loginPassshow = () =>

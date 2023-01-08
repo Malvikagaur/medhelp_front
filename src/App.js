@@ -9,10 +9,13 @@ import Appointment from "./doctors/Appointment";
 import Thanks from "./contact/Thanks";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import DoctorsSinglepage from "./doctors/DoctorsSinglepage";
+import Medicine from "./medicine/Medicine";
 import Slider from "./Slider/Slider";
+import Medcart from "./medicine/Medcart";
 
 
 function App() {
+  
   return (
 
     <div className="App">
@@ -27,9 +30,12 @@ function App() {
               <Route exact path="/Appointment" element={<Appointment/>}></Route>
               <Route exact path="/Thanks" element={<Thanks/>}></Route>
               <Route exact path="/SinglePage/:id" element={<DoctorsSinglepage/>}></Route>
-            
+              <Route exact path="/Medicine" element={<Medicine/>}></Route>
+              <Route exact path="/Medcart" element={<Medcart/>}></Route>
+              <Route exact path="/Slider" element={<Slider/>}></Route>
             </Routes>
           </Router>
+
          
           </div>
   );

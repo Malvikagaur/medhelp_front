@@ -3,6 +3,7 @@ import "./Login.css"
 import Navbar from '../nav-bar/Navbar';
 import Footer from "../footer/Footer";
 import Loginform from "../login/loginform/Loginform";
+import Slider from "../Slider/Slider";
 
 const Login = () => {
     return (
@@ -12,6 +13,7 @@ const Login = () => {
             <h2>Login</h2>
         </div>
         <Loginform/>
+        <Slider/>
         <Footer/>
         </div>
     )

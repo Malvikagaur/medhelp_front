@@ -9,10 +9,12 @@ import Footer from '../footer/Footer';
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [password, setPassword] = useState(" ");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const handleChange = () => {
-        if(name && email && subject && message)
+        
+        if(name && email && password && subject && message)
         {
             window.location.href="/Thanks";
         }
@@ -59,6 +61,11 @@ const Contact = () => {
                       <input type="email" name="email" placeholder="Enter your email address" required onChange={(e)=> 
                        {
                         setEmail(e.target.value)
+                       }}></input>
+
+                       <input type="password" name="password" placeholder="Enter your password" required onChange={(e)=> 
+                       {
+                        setPassword(e.target.value)
                        }}></input>
 
                       <input type="text" name="subject" placeholder="Enter your subject" required onChange={(e)=> 

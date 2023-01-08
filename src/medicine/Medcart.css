@@ -1,0 +1,36 @@
+.medicart{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("clip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.textboxcart{
+    width: 100%;
+    top: 30%;
+    color: aliceblue;
+    position: absolute;
+    text-align: center;
+}
+.textboxcart h1{
+    font-size: 65px;
+}
+.textboxcart p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.bttncart{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
