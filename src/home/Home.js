@@ -76,8 +76,9 @@ const Home = () => {
           </div>
           </div>
 
-
+               <div className="slidclass">
           <Slider/>
+          </div>
           <section className="courses">
             <div className="facility">
             <h1>Facilties We Offer</h1>
