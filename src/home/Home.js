@@ -5,6 +5,8 @@ import Footer from "../footer/Footer";
 // import Carousel from "../carousel/Carousel";
 import Slider from "../Slider/Slider";
 import axios from "axios";
+import SearchBar from "../SearchBar/SearchBar";
+import BookData from "../Data.json";
 
 
 const Home = () => {
@@ -44,6 +46,9 @@ const Home = () => {
             treatment. By Med-hElp you can easily find all the doctors near <br></br>
             you according to your disease, book their appoinment directly and also order medicines.</p>
             <a href="/About" class="bttn">Visit Us To Know More</a>
+            <div className="App">
+      <SearchBar placeholder="Search for Doctor" data={BookData} />
+    </div>
         </div>
       </div>  
         <div className="sign">
