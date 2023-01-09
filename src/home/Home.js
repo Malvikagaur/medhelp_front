@@ -47,7 +47,7 @@ const Home = () => {
             you according to your disease, book their appoinment directly and also order medicines.</p>
             <a href="/About" class="bttn">Visit Us To Know More</a>
             <div className="App">
-      <SearchBar placeholder="Search for Doctor" data={BookData} />
+      <SearchBar placeholder="Search for your Medicine" data={BookData} />
     </div>
         </div>
       </div>  
