@@ -9,13 +9,14 @@ export default function Loginform() {
   const [passwordtype,setPasswordType] = useState("password");
   const [leye, setEye] = useState(<BsEyeSlashFill/>)
   const [password,setPass] = useState();
+  
   async function handleSignin() 
   { 
     const user = {
       useremail,
       password,
     };
-    await axios.post("https://medhelp-server.vercel.app/api/signin",user).then(function(response){
+    await axios.post("http://localhost:8000/api/signin",user).then(function(response){
       if(response.data.token)
       {
           localStorage.setItem("token", response.data.token);

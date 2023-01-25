@@ -1,0 +1,59 @@
+.adminContainer {
+    text-align: center;
+    width: 100%;
+
+}
+
+.adminContainer h1 {
+    padding: 20px 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tableContainer table {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.tableContainer table tr {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.tableContainer table tr th:nth-child(1) {
+    width: 70px;
+}
+
+.tableContainer table tr th:nth-child(2) {
+    width: 120px;
+}
+
+.tableContainer table tr th:nth-child(3) {
+    width: 200px;
+}
+
+.tableContainer table tr th:nth-child(4) {
+    width: 150px;
+}
+
+.tableContainer table tr td:nth-child(1) {
+    width: 70px;
+}
+
+.tableContainer table tr td:nth-child(2) {
+    width: 120px;
+}
+
+.tableContainer table tr td:nth-child(3) {
+    width: 200px;
+}
+
+.tableContainer table tr td:nth-child(4) {
+    width: 150px;
+}

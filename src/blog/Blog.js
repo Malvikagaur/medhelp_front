@@ -16,13 +16,12 @@ const Blog = () => {
             username,
             useremail,
             password,
-            
         };
        if(username && useremail && password === " " ){
             console.log("false");
             alert("Please fill the complete details")
         }
-        await axios.post("https://medhelp-server.vercel.app/api/signup",user).then(function(response){
+        await axios.post("http://localhost:8000/api/signup",user).then(function(response){
             if(response)
             {
                 window.location.href = '/Login';  
