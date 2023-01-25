@@ -33,7 +33,7 @@ const Doctors= () => {
     
 
     return(
-        <div>
+        <>
         <div className="subheader4">
             <Navbar/>
             <h2>Book Appointment </h2>
@@ -66,7 +66,7 @@ const Doctors= () => {
         }
         </div>
         <Footer/>
-        </div>
+        </>
     )
 }
 

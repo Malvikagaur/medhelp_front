@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap');    
+
 .adminContainer {
     text-align: center;
     width: 100%;
-
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .adminContainer h1 {

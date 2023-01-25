@@ -21,7 +21,7 @@ const Navbar = () => {
     }
 
     return (
-        <div>
+        <>
         <div className = "nav-links" >
              <h1><FaHospitalUser/> Med-hElp</h1>
              <ul className={menuclick ? "Menu-nav-links" : "nav-links-ul" }>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <AiOutlineMenu onClick={ChangeValue} className ="menu_hamburger"/>
             </div>
         </div>
-        </div>
+        </>
     )
 }
 
