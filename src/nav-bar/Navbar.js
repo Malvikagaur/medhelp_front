@@ -3,8 +3,6 @@ import "./Navbar.css";
 import { FaHospitalUser } from 'react-icons/fa';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { Link } from "react-router-dom";
-import {GiMedicines} from 'react-icons/gi'
-import {BiSupport} from 'react-icons/bi';
 import { useState } from "react";
 
 const Navbar = () => {
@@ -29,9 +27,9 @@ const Navbar = () => {
                 <li><Link to="/About">ABOUT</Link></li> 
                 <li><Link to="/Blog">JOIN US</Link></li>
                 <li><Link to="/Login">LOGIN</Link></li>
-                <li><Link to="/Medicine"><GiMedicines/></Link></li> 
+                <li><Link to="/Medicine">MEDICINE</Link></li> 
                 {/* <li><Link to="/Doctors">DOCTORS</Link></li> */}
-                <li><Link to="/Contact"><BiSupport/></Link></li> 
+                <li><Link to="/Contact">SUPPORT</Link></li> 
             </ul>
             <div className="menu">
                 <AiOutlineMenu onClick={ChangeValue} className ="menu_hamburger"/>

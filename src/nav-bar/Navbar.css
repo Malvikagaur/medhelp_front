@@ -25,6 +25,7 @@
     color: aliceblue;
     text-decoration: none;
     font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .nav-links ul li::after{
    content: "";
@@ -41,6 +42,7 @@
 .nav-links h1{
     color: aliceblue;
     font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .menu 
